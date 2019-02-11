@@ -1,0 +1,68 @@
+@import 'normalize.css';
+
+@font-face {
+  font-family: 'Game Over';
+  src: url('../fonts/Game-Over.woff2') format('woff2'),
+    url('../fonts/Game-Over.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+canvas {
+  display: block;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 50vh; /* Location of the box */
+  left: 0;
+  top: 0;
+  min-width: 100vw; /* Full width */
+  min-height: 100vh; /* Full height */
+  background-color: black; /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content p {
+  display: flex;
+  background-color: lightgrey;
+  margin: auto;
+  padding-right: 1rem;
+  border: 1px solid grey;
+  width: 30%;
+  height: 10vh;
+  padding: 1rem;
+  font-family: 'Game Over';
+}
+
+/* The Close Button */
+#close {
+  color: grey;
+  display: inline-block;
+  font-size: 3rem;
+  line-height: 10px;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#message {
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+  font-size: 3rem;
+  line-height: 10px;
+  vertical-align: middle;
+}
